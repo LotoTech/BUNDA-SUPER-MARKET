@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manager Dashboard</title>
+
+<link rel="stylesheet" href="manager.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <i class="fa-solid fa-cart-shopping"></i>
+        BUNDA SUPER MARKET — Manager Dashboard
+    </div>
+</header>
+
+<!-- MAIN -->
+<div class="container">
+
+    <!-- LEFT MENU -->
+    <div class="sidebar">
+        <h3><i class="fa fa-bars"></i> Menu</h3>
+        <button onclick="showSection('verify')"><i class="fa fa-user-check"></i> Verify Sellers</button>
+        <button onclick="showSection('admins')"><i class="fa fa-user-shield"></i> Manage Admins</button>
+        <button onclick="showSection('activity')"><i class="fa fa-chart-line"></i> Activity Tracker</button>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <!-- VERIFY SELLERS -->
+        <div id="verify" class="section">
+    <h2><i class="fa fa-user-check"></i> Seller Verification</h2>
+
+    <input id="sellerName" placeholder="Seller Business Name">
+    <button onclick="verifySeller()"><i class="fa fa-check"></i> Verify Seller</button>
+    <button onclick="removeSeller()"><i class="fa fa-user-times"></i> Verify & Remove Seller</button>
+
+    <ul id="verifiedSellers"></ul>
+</div>
+
+        <!-- MANAGE ADMINS -->
+        <div id="admins" class="section hidden">
+            <h2><i class="fa fa-user-shield"></i> Admin Management</h2>
+
+            <input id="adminName" placeholder="Admin Name">
+            <button onclick="addAdmin()"><i class="fa fa-user-plus"></i> Add Admin</button>
+
+            <ul id="adminList"></ul>
+        </div>
+
+        <!-- ACTIVITY -->
+        <div id="activity" class="section hidden">
+    <h2><i class="fa fa-chart-line"></i> Activity Tracker</h2>
+    <button onclick="clearActivity()">
+        <i class="fa fa-trash"></i> Clear Activity Log
+    </button>
+    <ul id="activityLog"></ul>
+</div>
+
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+    <p><i class="fa fa-copyright"></i> 2026 Bunda Super Market</p>
+</footer>
+
+<script src="manager.js"></script>
+<script src="db.js"></script>
+</body>
+</html>

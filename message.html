@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunda Super Market Messages</title>
+
+<link rel="stylesheet" href="message.css">
+
+<!-- ICON LIBRARY -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="header">
+    <div class="logo">
+        <i class="fa-solid fa-cart-shopping"></i>
+        BUNDA SUPER MARKET
+    </div>
+
+    <div class="role-select">
+        <label><i class="fa fa-user"></i> Select Role:</label>
+        <select id="role">
+            <option value="Buyer">🛍 Buyer</option>
+            <option value="Seller">🏪 Seller</option>
+            <option value="Admin">🛠 Admin</option>
+            <option value="Manager">📊 Manager</option>
+        </select>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- CONTACT LIST -->
+    <div class="contacts">
+        <h3><i class="fa fa-comments"></i> Conversations</h3>
+        <ul id="contactList">
+            <li onclick="openChat('Buyer-Seller')">
+                <i class="fa fa-store"></i> Buyer ↔ Seller
+            </li>
+
+            <li onclick="openChat('Buyer-Admin')">
+                <i class="fa fa-user-shield"></i> Buyer ↔ Admin
+            </li>
+
+            <li onclick="openChat('Seller-Admin')">
+                <i class="fa fa-briefcase"></i> Seller ↔ Admin
+            </li>
+
+            <li onclick="openChat('Manager-All')">
+                <i class="fa fa-users"></i> Manager ↔ Everyone
+            </li>
+        </ul>
+    </div>
+
+    <!-- CHAT AREA -->
+    <div class="chat-area">
+        <div id="chatHeader">
+            <i class="fa fa-comment-dots"></i> Select a conversation
+        </div>
+
+        <div id="chatBox"></div>
+
+        <div class="chat-input">
+            <input type="text" id="messageInput"
+            placeholder="💬 Type message...">
+            <button onclick="sendMessage()">
+                <i class="fa fa-paper-plane"></i> Send
+            </button>
+        </div>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+    <p><i class="fa fa-copyright"></i> 2026 Bunda Super Market</p>
+</footer>
+
+<script src="message.js"></script>
+<script src="db.js"></script>
+</body>
+</html>

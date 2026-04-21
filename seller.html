@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seller Dashboard</title>
+
+<link rel="stylesheet" href="seller.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1><i class="fa fa-cart-shopping"></i> BUNDA SUPER MARKET</h1>
+    <p><i class="fa fa-store"></i> Seller Dashboard</p>
+</header>
+
+<div class="container">
+
+<!-- ADD PRODUCT CARD -->
+<div class="card">
+    <h2><i class="fa fa-plus-circle"></i> Add Product</h2>
+
+    <input id="pname" placeholder="Product Name">
+    <input id="pprice" placeholder="Price (MK)">
+    <textarea id="pdesc" placeholder="Product Description"></textarea>
+
+    <label><i class="fa fa-image"></i> Product Image</label>
+    <input type="file" id="pimage">
+
+    <label><i class="fa fa-video"></i> Product Video</label>
+    <input type="file" id="pvideo">
+
+    <button onclick="addProduct()">
+        <i class="fa fa-upload"></i> Add Product
+    </button>
+</div>
+
+<!-- PRODUCT LIST -->
+<div class="card">
+    <h2><i class="fa fa-box-open"></i> My Products</h2>
+    <div id="productList"></div>
+</div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+    <p><i class="fa fa-thumbs-up"></i> Follow Us</p>
+    <div class="socials">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-x-twitter"></i>
+    </div>
+</footer>
+
+<script src="seller.js"></script>
+<script src="db.js"></script>
+</body>
+</html>

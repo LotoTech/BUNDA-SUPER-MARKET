@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUNDA SUPER MARKET - Seller Registration</title>
+    <link rel="stylesheet" href="sellerregistration.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        🛒 BUNDA SUPER MARKET
+    </div>
+</header>
+
+<div class="container">
+    <form class="form-box">
+        <h2>Seller Registration</h2>
+
+        <div class="input-group">
+            <i class="fa fa-store"></i>
+            <input type="text" placeholder="Business Name" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-user"></i>
+            <input type="text" placeholder="Owner Full Name" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-id-card"></i>
+            <input type="text" placeholder="National ID Number" required>
+        </div>
+
+        <div class="input-group file">
+            <i class="fa fa-image"></i>
+            <input type="file" required>
+            <label>Upload ID Picture</label>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-phone"></i>
+            <input type="tel" placeholder="Phone Number" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-envelope"></i>
+            <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-group">
+            <i class="fa fa-venus-mars"></i>
+            <select required>
+                <option value="">Select Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <button type="submit">Register Seller</button>
+    </form>
+</div>
+
+<footer>
+    <p>Follow us on</p>
+    <div class="socials">
+        <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+    </div>
+</footer>
+<script src="sellerregitration.js"></script>
+<script src="db.js"></script>
+</body>
+</html>

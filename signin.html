@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bunda Super Market Login</title>
+
+<link rel="stylesheet" href="signin.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <h1><i class="fa fa-cart-shopping"></i> BUNDA SUPER MARKET</h1>
+        <p><i class="fa fa-shield-halved"></i> Secure Multi-User Portal</p>
+    </div>
+
+    <!-- LOGIN BOX -->
+    <div class="login-box">
+        <h2><i class="fa fa-right-to-bracket"></i> User Login</h2>
+
+        <form id="loginForm">
+
+            <!-- ROLE -->
+            <div class="input-group">
+                <label><i class="fa fa-users"></i> Select Role</label>
+
+                <select id="role" required>
+                <option value="">Choose Role</option>
+                <option value="Admin">👑 Admin</option>
+                <option value="Seller">🛒 Seller</option>
+                <option value="Manager">📊 Manager</option>
+            </select>
+            </div>
+
+            <!-- EMAIL -->
+            <div class="input-group">
+                <label><i class="fa fa-envelope"></i> Email Address</label>
+                <div class="input-icon">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+            </div>
+
+            <!-- USERNAME -->
+            <div class="input-group">
+                <label><i class="fa fa-user"></i> Username</label>
+                <div class="input-icon">
+                    <i class="fa fa-user"></i>
+                    <input type="text" id="username" placeholder="Enter username" required>
+                </div>
+            </div>
+
+            <!-- PASSWORD -->
+            <div class="input-group">
+                <label><i class="fa fa-lock"></i> Password</label>
+                <div class="input-icon">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+            </div>
+
+            <button type="submit" class="login-btn">
+                <i class="fa fa-key"></i> Sign In
+            </button>
+
+        </form>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p><i class="fa fa-thumbs-up"></i> Follow Us On Social Media</p>
+        <div class="socials">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+        </div>
+    </footer>
+
+</div>
+
+<script src="signin.js"></script>
+<script src="db.js"></script>
+</body>
+</html>
