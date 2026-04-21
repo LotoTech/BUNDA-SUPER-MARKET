@@ -124,7 +124,9 @@ footer{
     font-weight:bold;
     font-size:14px;
 }
-
+@media(max-width:600px){
+    .logo h1{ font-size:22px; }
+}
 /* MOBILE FIXES 
 @media (max-width:480px){
 
