@@ -125,7 +125,7 @@ footer{
     font-size:14px;
 }
 
-/* MOBILE FIXES */
+/* MOBILE FIXES 
 @media (max-width:480px){
 
     .form-box{
@@ -143,7 +143,7 @@ footer{
     }
 }
 
-/* LARGE SCREEN IMPROVEMENT */
+/* LARGE SCREEN IMPROVEMENT 
 @media (min-width:600px){
     .container{
         padding:50px;
@@ -153,5 +153,5 @@ footer{
         max-width:450px;
     }
 }
-
+*/
 
