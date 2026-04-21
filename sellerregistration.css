@@ -144,7 +144,7 @@ footer{
 }
 
 /* LARGE SCREEN IMPROVEMENT */
-@media (min-width:900px){
+@media (min-width:600px){
     .container{
         padding:50px;
     }
